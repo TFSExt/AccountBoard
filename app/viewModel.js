@@ -1,4 +1,15 @@
-let viewModel = { };
+let viewModel = {
+    listOfProcesses: ko.observableArray([]),
+    listOfTypes: ko.observableArray([]),
+    listOfStatuses: ko.observableArray([]),
+    listOfProjects: ko.observableArray([]),
+    
+    currentProcess: ko.observable(null),
+    currentType: ko.observable(null),
+    currentStatuses: ko.observableArray([]),
+    currentProjects: ko.observableArray([])
+};
+
 
 viewModel.loadProjects = function() {
     model.getProjects()
@@ -25,6 +36,6 @@ viewModel.loadWorkItems = function() {
     })
 }
 
-viewModel.loadProjects();
-viewModel.loadProcesses();
+//viewModel.loadProjects();
+//viewModel.loadProcesses();
 //viewModel.loadWorkItems();

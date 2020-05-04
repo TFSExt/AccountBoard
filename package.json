@@ -20,6 +20,8 @@
     "electron": "^5.0.7"
   },
   "dependencies": {
-    "azure-devops-node-api": "^9.0.1"
+    "azure-devops-node-api": "^9.0.1",
+    "bootstrap": "^4.3.1",
+    "knockout": "^3.5.0"
   }
 }
